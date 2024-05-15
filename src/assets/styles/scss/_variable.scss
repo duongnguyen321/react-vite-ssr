@@ -1,0 +1,97 @@
+
+/* Default theme (if no theme is selected, it defaults to blue perhaps) */
+:root {
+  --color-50: #edf7f6;
+  --color-100: #c8e7e2;
+  --color-200: #aedbd4;
+  --color-300: #89cbc0;
+  --color-400: #72c1b4;
+  --color-500: #4fb1a1;
+  --color-600: #48a193;
+  --color-700: #387e72;
+  --color-800: #2b6159;
+  --color-900: #214a44;
+}
+
+[data-theme='blue'] {
+  --color-50: #e7ecf3;
+  --color-100: #b6c5db;
+  --color-200: #92a9c9;
+  --color-300: #6082b1;
+  --color-400: #4169a1;
+  --color-500: #12448a;
+  /* primary blue */
+  --color-600: #103e7e;
+  --color-700: #0d3062;
+  --color-800: #0a254c;
+  --color-900: #081d3a;
+}
+
+[data-theme='green'] {
+  --color-50: #edf7f6;
+  --color-100: #c8e7e2;
+  --color-200: #aedbd4;
+  --color-300: #89cbc0;
+  --color-400: #72c1b4;
+  --color-500: #4fb1a1;
+  /* primary green */
+  --color-600: #48a193;
+  --color-700: #387e72;
+  --color-800: #2b6159;
+  --color-900: #214a44;
+}
+
+[data-theme='red'] {
+  --color-50: #fcf1ef;
+  --color-100: #f5d2cc;
+  --color-200: #f0bcb4;
+  --color-300: #ea9e91;
+  --color-400: #e58b7c;
+  --color-500: #df6e5b;
+  /* primary red */
+  --color-600: #cb6453;
+  --color-700: #9e4e41;
+  --color-800: #7b3d32;
+  --color-900: #5e2e26;
+}
+
+[data-theme='orange'] {
+  --color-50: #fdf4ee;
+  --color-100: #f8dcc9;
+  --color-200: #f4cbaf;
+  --color-300: #f0b38a;
+  --color-400: #eda473;
+  --color-500: #e88d50;
+  /* primary orange */
+  --color-600: #d38049;
+  --color-700: #a56439;
+  --color-800: #804e2c;
+  --color-900: #613b22;
+}
+[data-theme='dark'] {
+  --color-50: #e3e3e3;
+  --color-100: #c7c7c7;
+  --color-200: #ababab;
+  --color-300: #8f8f8f;
+  --color-400: #737373;
+  --color-500: #575757;
+  /* primary dark */
+  --color-600: #3b3b3b;
+  --color-700: #2f2f2f;
+  --color-800: #232323;
+  --color-900: #171717;
+}
+
+[data-theme='light'] {
+  --color-50: #ffffff;
+  --color-100: #f2f2f2;
+  --color-200: #e6e6e6;
+  --color-300: #d9d9d9;
+  --color-400: #cccccc;
+  --color-500: #bfbfbf;
+  /* primary light */
+  --color-600: #b3b3b3;
+  --color-700: #a6a6a6;
+  --color-800: #999999;
+  --color-900: #8c8c8c;
+}

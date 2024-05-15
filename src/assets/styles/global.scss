@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'scss/_variable.scss';
+html {
+  scroll-behavior: smooth;
+  @media (max-width: 900px) {
+    font-size: 90%;
+  }
+  @media (max-width: 768px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden auto;
+  background-color: var(--color-100);
+}
+
+img {
+  object-fit: cover !important;
+}
+
+%base-content {
+  @apply font-bold my-2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %base-content;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-base;
+}
+
+p {
+  @apply text-sm;
+}
+
+a {
+  @apply hover:underline;
+}
+
+a[target='_blank'] {
+  @apply text-[var(--color-500)] drop-shadow-sm shadow-[var(--color-500)] text-lg;
+}
+
+span, q, a {
+  @apply text-base p-0 m-0 no-underline hover:no-underline;
+}
+
+ul {
+  @apply list-none;
+}
+
+em, i {
+  @apply italic;
+}
+
+q {
+  quotes: none;
+}
+
+table tr {
+  @apply border-b border-gray-200;
+}
+
+.p-m0 p {
+  @apply m-0 p-0;
+}
+
+span.non-break {
+  font-size: inherit;
+}
+
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track, .horizontal-scrollable::-webkit-scrollbar-track {
+  background: rgb(230, 225, 225);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb, .horizontal-scrollable::-webkit-scrollbar-thumb {
+  background: rgb(190, 183, 183);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:active, .horizontal-scrollable::-webkit-scrollbar-thumb:active {
+  background: var(--color-500);
+}
+
+.horizontal-scrollable {
+  overflow-x: auto;
+}
+
+.horizontal-scrollable::-webkit-scrollbar {
+  height: 10px;
+}
+
+
+textarea {
+  resize: none;
+}
