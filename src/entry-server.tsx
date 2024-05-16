@@ -1,12 +1,14 @@
 import '@styles/global.scss';
 import Main from '@App/main.tsx';
-
 import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router-dom/server';
 import './i18n';
 
-export function render() {
+export function render(url: string) {
   const html = ReactDOMServer.renderToString(
-    <Main/>
+    <StaticRouter location={url}>
+      <Main />
+    </StaticRouter>
   );
   return { html };
 }

@@ -1,5 +1,14 @@
 {
-  "homepage": {
-    "TITLE": "Xin chào thế giới"
+  "home": {
+    "TITLE": "Xin chào Thế giới"
+  },
+  "about": {
+    "TITLE": "Về Thế giới"
+  },
+  "login": {
+    "TITLE": "Đến với Thế giới"
+  },
+  "profile": {
+    "TITLE": "Sinh ra ở Thế giới"
   }
 }

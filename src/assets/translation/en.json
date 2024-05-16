@@ -1,5 +1,14 @@
 {
-  "homepage": {
+  "home": {
     "TITLE": "Hello World"
+  },
+  "about": {
+    "TITLE": "About World"
+  },
+  "login": {
+    "TITLE": "Go to the World"
+  },
+  "profile": {
+    "TITLE": "Born in the World"
   }
 }

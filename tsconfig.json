@@ -43,6 +43,9 @@
       "@helpers/*": [
         "./src/helpers/*"
       ],
+      "@router/*": [
+        "./src/router/*"
+      ],
       "@hooks/*": [
         "./src/hooks/*"
       ],
