@@ -1,6 +1,8 @@
 import {config} from 'dotenv'
 import fs from 'node:fs/promises'
 import express from 'express'
+import sirv from 'sirv'
+import compression from 'compression'
 config()
 // Constants
 const isProduction = process.env.NODE_ENV === 'production'
@@ -29,8 +31,6 @@ if (!isProduction) {
   })
   app.use(vite.middlewares)
 } else {
-  const compression = (await import('compression')).default
-  const sirv = (await import('sirv')).default
   app.use(compression())
   app.use(base, sirv('./dist/client', { extensions: [] }))
 }
